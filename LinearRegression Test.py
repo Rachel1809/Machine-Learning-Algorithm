@@ -15,7 +15,7 @@ from LinearRegression import LinearRegression
 def loss_function(y_true, y_pred):
     return np.mean((y_true - y_pred)**2) * 1/2
 
-model = LinearRegression(lr=0.005,epochs=5000)
+model = LinearRegression(lr=0.005,epochs=4000)
 model.fit(X_train, y_train)
 predictions = model.predict(X_test)
 
